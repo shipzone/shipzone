@@ -1,0 +1,27 @@
+{
+  "name": "shipzone",
+  "version": "0.0.0",
+  "description": "Easy access to the shipzone.io API",
+  "main": "dist/index.js",
+  "scripts": {
+    "test": "(npmts)"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/shipzone/shipzone.git"
+  },
+  "keywords": [
+    "ship",
+    "docker",
+    "ci"
+  ],
+  "author": "Lossless GmbH",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/shipzone/shipzone/issues"
+  },
+  "homepage": "https://github.com/shipzone/shipzone#readme",
+  "dependencies": {
+    "npmts": "^3.0.2"
+  }
+}

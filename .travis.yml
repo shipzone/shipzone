@@ -1,0 +1,11 @@
+language: node_js
+node_js:
+- stable
+deploy:
+  provider: npm
+  email: npm@lossless.digital
+  api_key:
+    secure: BKIE3ZuzETNdCGVlDSfJDoDL9NAZj8GjtRJ8nEVMVpxSIPve5ikL3ddPfrMCps5nLpnVkkeE92POS3QvSzz92m4qT7uWDdypzOxj8L5PT0+bHn/uKy4JZJS3W++jrtNBj4i+9zVVzaCA3ar0SNbC+nxfDVwBcJDw7MMeWJrvvhQ0DcWenZPSb/Un3T0A32isNPMNYAl8j92bNf6bXGFBEbllLcaGnV5ltSDhpavIVUN1IJa5T5JOftJJVMzKbBXS3fYvVxQwwoqHgnp6xsk32NklScyedka4ODL15bTeDHH5giRjwC/KwI6uE8Gn67KC4kRgW5Ev6NPQshxzPwp7uR0ZlEafoSir10xvmrhRjiRlX4Sks4kv0m/Kr/bBeB4UJFGvEzpOK3MDmapjE19pOS7eofwXGzJ/w7wqv3SqPyoqiyKDtwy80RKr7xwFDG0IGxEGV2UUO/pBzWO7JgoTm8VfwRT+8enXjJwVYFAhwSYx/gYo4EJ3wwxQYbiMmrKl3nQdvW0zQTTB/hkNVD/ZRISghYY7e2ChZD9DsVuVG1/HtUwSKBO43F1QdwJ66B4iJwxjOcENIA1yUhGHqD2+D1xaoJTaTrHrg2MDc6ZxWm8hNX+MvskAzVBAZdED9vCWB0fb69C1dkELB89ZVP2mJl03nUZlOBdIQC2DtMWU9TI=
+  on:
+    tags: true
+    repo: shipzone/shipzone
