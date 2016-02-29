@@ -21,7 +21,10 @@
     "url": "https://github.com/shipzone/shipzone/issues"
   },
   "homepage": "https://github.com/shipzone/shipzone#readme",
-  "dependencies": {
+  "devDependencies": {
     "npmts": "^3.0.2"
+  },
+  "dependencies": {
+    "beautylog": "^2.1.1"
   }
 }
