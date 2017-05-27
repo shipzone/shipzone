@@ -4,7 +4,9 @@
   "description": "Easy access to the shipzone.io API",
   "main": "dist/index.js",
   "scripts": {
-    "test": "(npmts)"
+    "test": "(npmts)",
+    "snyk-protect": "snyk protect",
+    "prepublish": "npm run snyk-protect"
   },
   "repository": {
     "type": "git",
@@ -22,6 +24,8 @@
   },
   "homepage": "https://github.com/shipzone/shipzone#readme",
   "dependencies": {
-    "npmts": "^3.0.2"
-  }
+    "npmts": "^3.0.2",
+    "snyk": "^1.31.0"
+  },
+  "snyk": true
 }
