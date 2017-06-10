@@ -22,6 +22,6 @@
   },
   "homepage": "https://github.com/shipzone/shipzone#readme",
   "dependencies": {
-    "npmts": "^3.0.2"
+    "npmts": "^5.3.1"
   }
 }
