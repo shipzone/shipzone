@@ -1,8 +1,5 @@
-.idea/
-coverage
-node_modules
-
-ts/**/*.js
-ts/**/*.js.map
-ts/typings/
-
+.nogit/
+node_modules/
+coverage/
+public/
+pages/

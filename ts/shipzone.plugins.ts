@@ -1,3 +1,1 @@
-var plugins = {
-
-};
+import 'typings-global'
