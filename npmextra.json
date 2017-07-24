@@ -1,4 +1,8 @@
 {
+  "npmts": {
+    "cli": true,
+    "coverageTreshold": 10
+  },
   "npmci": {
     "globalNpmTools": [
       "npmts"

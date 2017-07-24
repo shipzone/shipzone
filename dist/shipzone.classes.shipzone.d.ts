@@ -1,11 +1,19 @@
 export declare class ShipZone {
     constructor();
     /**
-     * reads a directory to make sense of whats at cwd
+     * gathers project data
      */
-    readDirectory(): Promise<void>;
+    gatherProjectData(): void;
     /**
      * deploys an app to servezone
      */
     deployToServezone(): Promise<void>;
+    /**
+     * reads a directory to make sense of whats at cwd
+     */
+    private readDirectory();
+    /**
+     * reads the environment and tries to match it against app.json
+     */
+    private readEnv();
 }

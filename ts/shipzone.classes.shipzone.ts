@@ -2,14 +2,15 @@ import * as plugins from './shipzone.plugins'
 import * as paths from './shipzone.paths'
 
 export class ShipZone {
-  constructor () {
+  
+  constructor() {
     // TODO:
   }
 
   /**
-   * reads a directory to make sense of whats at cwd
+   * gathers project data
    */
-  async readDirectory () {
+  gatherProjectData () {
 
   }
 
@@ -18,5 +19,23 @@ export class ShipZone {
    */
   async deployToServezone () {
 
+  }
+
+  // =================
+  // private functions
+  // =================
+
+  /**
+   * reads a directory to make sense of whats at cwd
+   */
+  private async readDirectory () {
+    // TODO:
+  }
+
+  /**
+   * reads the environment and tries to match it against app.json
+   */
+  private async readEnv () {
+    // TODO:
   }
 }
