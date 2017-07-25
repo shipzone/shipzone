@@ -1,24 +1,28 @@
 import * as plugins from './shipzone.plugins'
 import * as paths from './shipzone.paths'
 
+import { IAppJSON } from 'smartapp'
+
 export class ShipZone {
-  
-  constructor() {
+  appJson: plugins.smartapp.IAppJSON
+  constructor () {
     // TODO:
   }
 
   /**
    * gathers project data
    */
-  gatherProjectData () {
-
+  async gatherProjectData () {
+    await this.readDirectory()
+    await this.readEnv()
+    await this.checkIntegrity()
   }
 
   /**
    * deploys an app to servezone 
    */
   async deployToServezone () {
-
+    await this.gatherProjectData()
   }
 
   // =================
@@ -37,5 +41,12 @@ export class ShipZone {
    */
   private async readEnv () {
     // TODO:
+  }
+
+  /**
+   * check integrity of the gathered data
+   */
+  private async checkIntegrity () {
+
   }
 }

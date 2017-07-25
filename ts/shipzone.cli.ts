@@ -1,5 +1,9 @@
 import * as plugins from './shipzone.plugins'
+import { Smartcli } from 'smartcli'
 
-export let run = async () => {
+import { standardShipZone } from './index'
 
-}
+export let shipzoneCli = new plugins.smartcli.Smartcli()
+shipzoneCli.addCommand('deploy').then(async argvArg => {
+  await standardShipZone.deployToServezone()
+})

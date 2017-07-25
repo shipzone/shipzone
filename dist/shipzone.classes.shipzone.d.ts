@@ -1,9 +1,11 @@
+import * as plugins from './shipzone.plugins';
 export declare class ShipZone {
+    appJson: plugins.smartapp.IAppJSON;
     constructor();
     /**
      * gathers project data
      */
-    gatherProjectData(): void;
+    gatherProjectData(): Promise<void>;
     /**
      * deploys an app to servezone
      */
@@ -16,4 +18,8 @@ export declare class ShipZone {
      * reads the environment and tries to match it against app.json
      */
     private readEnv();
+    /**
+     * check integrity of the gathered data
+     */
+    private checkIntegrity();
 }

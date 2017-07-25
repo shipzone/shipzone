@@ -1,1 +1,2 @@
-export declare let run: () => Promise<void>;
+import { Smartcli } from 'smartcli';
+export declare let shipzoneCli: Smartcli;
