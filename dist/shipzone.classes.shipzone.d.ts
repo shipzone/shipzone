@@ -1,6 +1,9 @@
 import * as plugins from './shipzone.plugins';
+import { SzConnection } from './shipzone.classes.szconnection';
 export declare class ShipZone {
     appJson: plugins.smartapp.IAppJSON;
+    shipzoneData: plugins.servezoneInterfaces.IShipZoneData;
+    szConnection: SzConnection;
     constructor();
     /**
      * gathers project data
@@ -22,4 +25,8 @@ export declare class ShipZone {
      * check integrity of the gathered data
      */
     private checkIntegrity();
+    /**
+     * connect to a servezone instance
+     */
+    private connectToServeZone();
 }
