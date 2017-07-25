@@ -1,6 +1,6 @@
 {
   "name": "shipzone",
-  "version": "1.0.4",
+  "version": "1.0.5",
   "description": "ship stuff to production",
   "main": "dist/index.js",
   "typings": "dist/index.d.ts",
