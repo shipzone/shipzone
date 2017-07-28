@@ -21,13 +21,19 @@ ship stuff to production
 ## Usage
 Use TypeScript for best in class instellisense.
 
-## DockerImage
-There is a docker image that is ready for use:
+shipzone is the bridge between your code and deploying as running app into production.
+This the right place to run shipzone is in the release step of your CI pipeline.
 
+To use shipzone we recommend using the `hosttoday/ht-docker-node:npmci` image
+
+Then you simply run ...
+
+```sh
+shipzone deploy
 ```
-shipzone/shipzone # dockerhub
-registry.gitlab.io/shipzone/shipzone
-```
+
+... within your project directory
+
 
 For further information read the linked docs at the top of this README.
 

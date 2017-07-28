@@ -22,8 +22,8 @@
   "dependencies": {
     "beautylog": "^6.1.10",
     "projectinfo": "^3.0.2",
-    "servezone-interfaces": "^1.0.8",
-    "smartapp": "^1.0.9",
+    "servezone-interfaces": "^1.0.9",
+    "smartapp": "^1.0.12",
     "smartcli": "^2.0.7",
     "smartfile": "^4.2.17",
     "smartsocket": "^1.1.10",
