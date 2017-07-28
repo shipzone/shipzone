@@ -24,7 +24,7 @@ export declare class ShipZone {
     /**
      * check integrity of the gathered data
      */
-    private checkIntegrity();
+    private buildShipzoneData();
     /**
      * connect to a servezone instance
      */

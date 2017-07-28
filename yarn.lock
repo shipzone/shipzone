@@ -35,7 +35,7 @@
   dependencies:
     "@types/node" "*"
 
-"@types/lodash@^4.14.55", "@types/lodash@^4.14.67":
+"@types/lodash@^4.14.55", "@types/lodash@^4.14.67", "@types/lodash@^4.14.68":
   version "4.14.71"
   resolved "https://registry.yarnpkg.com/@types/lodash/-/lodash-4.14.71.tgz#0dc383f78981216ac76e2f2c3afd998e0450e4c1"
 
@@ -43,7 +43,7 @@
   version "2.0.29"
   resolved "https://registry.yarnpkg.com/@types/minimatch/-/minimatch-2.0.29.tgz#5002e14f75e2d71e564281df0431c8c1b4a2a36a"
 
-"@types/node@*":
+"@types/node@*", "@types/node@^8.0.10":
   version "8.0.17"
   resolved "https://registry.yarnpkg.com/@types/node/-/node-8.0.17.tgz#677bc8c118cfb76013febb62ede1f31d2c7222a1"
 
@@ -1218,14 +1218,14 @@ signal-exit@^3.0.0, signal-exit@^3.0.2:
   version "3.0.2"
   resolved "https://registry.yarnpkg.com/signal-exit/-/signal-exit-3.0.2.tgz#b5fdc08f1287ea1178628e415e25132b73646c6d"
 
-smartapp@^1.0.12, smartapp@^1.0.9:
-  version "1.0.12"
-  resolved "https://registry.yarnpkg.com/smartapp/-/smartapp-1.0.12.tgz#753b432ded8bf7c1205c750d163f09f5d3600695"
+smartapp@^1.0.14, smartapp@^1.0.9:
+  version "1.0.14"
+  resolved "https://registry.yarnpkg.com/smartapp/-/smartapp-1.0.14.tgz#d19d6315aa8848027c1ffbf1e979412b13c16001"
   dependencies:
-    lodash "^4.17.4"
     smartfile "^4.2.17"
     smartjson "^1.0.1"
-    typings-global "^1.0.17"
+    smartlodash "^1.0.1"
+    typings-global "^1.0.20"
 
 smartchai@^1.0.3:
   version "1.0.3"
@@ -1314,6 +1314,14 @@ smartjson@^1.0.1:
   dependencies:
     lodash "^4.17.4"
     typings-global "^1.0.14"
+
+smartlodash@^1.0.1:
+  version "1.0.1"
+  resolved "https://registry.yarnpkg.com/smartlodash/-/smartlodash-1.0.1.tgz#8ddb41f3247d6d9856c63d1ea1ffccb78415a9c6"
+  dependencies:
+    "@types/lodash" "^4.14.68"
+    "@types/node" "^8.0.10"
+    lodash "^4.17.4"
 
 smartparam@0.1.1:
   version "0.1.1"

@@ -57,7 +57,7 @@ buildDocker:
   script:
     - npmci prepare docker
     - npmci build docker
-    - npmci publish docker
+    - npmci publish docker release
   only:
     - tags
   tags:
