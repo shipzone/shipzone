@@ -10,7 +10,7 @@
     "test": "(npmts)"
   },
   "bin": {
-    "coreflow": "dist/cli.js"
+    "shipzone": "dist/cli.js"
   },
   "repository": {
     "type": "git",
