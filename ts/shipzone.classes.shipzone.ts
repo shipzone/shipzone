@@ -14,7 +14,7 @@ export class ShipZone {
   szConnection: SzConnection
   
   constructor () {
-    // TODO:
+    this.szConnection = new SzConnection()
   }
 
   /**

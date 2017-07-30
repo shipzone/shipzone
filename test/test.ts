@@ -1,10 +1,16 @@
 import { expect, tap } from 'tapbundle'
-import * as shipzone from '../dist/index'
+import * as shipzone from '../ts/index'
 
+let testShipzone: shipzone.ShipZone
 
-tap.test('first test', async () => {
+tap.test('should create a valid instance of shipzone', async () => {
   console.log('hey')
-  shipzone
+  testShipzone = new shipzone.ShipZone()
+  expect(testShipzone).to.be.instanceof(shipzone.ShipZone)
+})
+
+tap.test('should connect to servezone', async () => {
+  testShipzone.szConnection
 })
 
 tap.start()
