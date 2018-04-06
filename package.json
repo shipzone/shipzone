@@ -1,6 +1,6 @@
 {
   "name": "@shipzone/shipzone",
-  "version": "1.0.11",
+  "version": "1.0.12",
   "description": "ship stuff to production",
   "main": "dist/index.js",
   "typings": "dist/index.d.ts",
