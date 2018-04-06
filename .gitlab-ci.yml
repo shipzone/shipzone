@@ -16,7 +16,7 @@ stages:
 testLEGACY:
   stage: test
   script:
-    - npmci test legacy
+    - npmci npm test legacy
   coverage: /\d+.?\d+?\%\s*coverage/
   tags:
     - docker
@@ -25,7 +25,7 @@ testLEGACY:
 testLTS:
   stage: test
   script:
-    - npmci test lts
+    - npmci npm test lts
   coverage: /\d+.?\d+?\%\s*coverage/
   tags:
     - docker
@@ -33,7 +33,7 @@ testLTS:
 testSTABLE:
   stage: test
   script:
-    - npmci test stable
+    - npmci npm test stable
   coverage: /\d+.?\d+?\%\s*coverage/
   tags:
     - docker
@@ -41,7 +41,7 @@ testSTABLE:
 release:
   stage: release
   script:
-    - npmci publish
+    - npmci npm publish
   only:
     - tags
   tags:
@@ -55,9 +55,9 @@ buildDocker:
     DOCKER_DRIVER: overlay
   stage: build
   script:
-    - npmci prepare docker
-    - npmci build docker
-    - npmci publish docker release
+    - npmci docker prepare
+    - npmci docker build
+    - npmci docker publish
   only:
     - tags
   tags:
