@@ -1,5 +1,5 @@
 {
-  "name": "shipzone",
+  "name": "@shipzone/shipzone",
   "version": "1.0.10",
   "description": "ship stuff to production",
   "main": "dist/index.js",
@@ -17,16 +17,16 @@
     "url": "git+https://gitlab.com/shipzone/shipzone.git"
   },
   "devDependencies": {
-    "tapbundle": "^1.1.1"
+    "@types/node": "^9.6.2",
+    "tapbundle": "^2.0.0"
   },
   "dependencies": {
     "beautylog": "^6.1.10",
-    "projectinfo": "^3.0.2",
+    "projectinfo": "^3.0.4",
     "servezone-interfaces": "^1.0.9",
     "smartapp": "^1.0.14",
-    "smartcli": "^2.0.7",
-    "smartfile": "^4.2.17",
-    "smartsocket": "^1.1.10",
-    "typings-global": "^1.0.20"
+    "smartcli": "^2.0.12",
+    "smartfile": "^4.2.28",
+    "smartsocket": "^1.1.19"
   }
 }

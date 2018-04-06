@@ -1,4 +1,3 @@
-import 'typings-global';
 import * as beautylog from 'beautylog';
 import * as path from 'path';
 import * as projectinfo from 'projectinfo';
