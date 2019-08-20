@@ -1,11 +1,15 @@
 {
-  "npmts": {
-    "cli": true,
-    "coverageTreshold": 10
-  },
   "npmci": {
-    "npmGlobalTools": [
-      "npmts"
-    ]
+    "npmGlobalTools": []
+  },
+  "gitzone": {
+    "module": {
+      "githost": "gitlab.com",
+      "gitscope": "shipzone",
+      "gitrepo": "shipzone",
+      "shortDescription": "a shipzone api package",
+      "npmPackagename": "@shipzone/api",
+      "license": "MIT"
+    }
   }
 }
